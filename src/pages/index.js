@@ -21,7 +21,7 @@ export default ({ data }) => {
       <SEO title="Home" />
       <div>
         <h2>Diego's Concerns</h2>
-        <h4>{data.allMarkdownRemark.totalCount}</h4>
+        <h4>Title: {data.allMarkdownRemark.totalCount}</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <BlogLink to={node.fields.slug}>
